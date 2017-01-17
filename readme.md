@@ -16,7 +16,7 @@ Using Javascript:
 
 Using HTML 'data' Attributes:
 
-* **data-width**: set width or percentage value of the bar (in pixel). *Default 80px*.
+* **data-percent**: set width or percentage value of the bar (in pixel). *Default 80px*.
 * **data-height**: set height value of the bar (in pixel). *Default: 30px*.
 * **data-text-color**: set label color of the bar. *Default: "#ffffff"*.
 * **data-background**: set background color of the bar. *Default: "#337ab7"*.
