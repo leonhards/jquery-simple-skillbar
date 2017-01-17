@@ -21,7 +21,7 @@
         this.run = function() {
             this.o = $.extend(
                 {
-                    width: this.$.data('width') || 80,
+                    percent: this.$.data('percent') || 80,
                     height: this.$.data('height') || 30,
                     textColor: this.$.data('text-color') || '#ffffff',
                     background: this.$.data('background') || '#337ab7'
@@ -67,7 +67,7 @@
             var t = setInterval( function() { itv(); }, 10 );            
 
             var itv = function() {
-                if ( w >= s.o.width ) {
+                if ( w >= s.o.percent ) {
                     clearInterval(t);
                 } else {
                     w++;
