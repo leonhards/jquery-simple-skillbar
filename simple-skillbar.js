@@ -6,6 +6,7 @@
  *  Under MIT and GPL licenses:
  *  http://www.opensource.org/licenses/mit-license.php
  *  http://www.gnu.org/licenses/gpl.html
+ *  Source: https://github.com/leonhards/jquery-simple-skillbar
  */
 
 (function ( $ ) {
@@ -21,7 +22,7 @@
         this.run = function() {
             this.o = $.extend(
                 {
-                    percent: this.$.data('percent') || 80,
+                    width: this.$.data('width') || 80,
                     height: this.$.data('height') || 30,
                     textColor: this.$.data('text-color') || '#ffffff',
                     background: this.$.data('background') || '#337ab7'
@@ -67,7 +68,7 @@
             var t = setInterval( function() { itv(); }, 10 );            
 
             var itv = function() {
-                if ( w >= s.o.percent ) {
+                if ( w >= s.o.width ) {
                     clearInterval(t);
                 } else {
                     w++;
@@ -85,7 +86,6 @@
             d.$ = $(this);
             d.run();
         });
-
     };
  
 }( jQuery ));
