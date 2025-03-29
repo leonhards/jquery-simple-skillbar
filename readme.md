@@ -103,6 +103,13 @@ Using HTML attributes:
 - Supports pixel (`px`) and percentage (`%`) widths for flexible design.
 - Animations work smoothly with modern browsers.
 
+## 🌐 Contributions
+
+This project is open to the community! Feel free to:
+- ⭐ Star the repository if you find it useful.
+- 🐛 Report issues or suggest features via GitHub Issues.
+- 🛠️ Submit pull requests for enhancements or bug fixes.
+
 ## 📜 License
 
 This project is licensed under the **MIT License**.
