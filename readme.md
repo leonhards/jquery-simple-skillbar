@@ -1,73 +1,112 @@
 # jQuery Simple SkillBar
 
-SimpleSkillbar is a jQuery plugin for displaying animated skill bar set.
+![jQuery](https://img.shields.io/badge/jQuery-Plugin-blue?logo=jquery)
+![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-This plugin can be run only from the html tag or by using a simple one line js code.
+A lightweight and easy-to-use **jQuery plugin** for displaying animated skill bars with minimal setup.
 
+Designed for:
+- 📊 Showcasing skill levels in a sleek animated bar.
+- 🎨 Customizable styling options with JavaScript or HTML attributes.
+- ⚡ Quick integration with just a single line of code.
 
-## Options
+## 🚀 Features
 
-Using Javascript:
+- Simple and lightweight.
+- Easy customization using JavaScript or `data` attributes.
+- Supports percentage and pixel-based widths.
+- Smooth animation effects.
 
-* **width**: set width or percentage value of the bar (in pixel). *Default: 80px*.
-* **height**: set height value of the bar (in pixel). *Default: 30px*.
-* **textColor**: set label color of the bar. *Default: "#ffffff"*.
-* **background**: set background color of the bar. *Default: "#337ab7"*.
+## 🔧 Installation
 
-Using HTML 'data' Attributes:
+Include jQuery and the SimpleSkillbar script in your HTML:
 
-* **data-width**: set width or percentage value of the bar (in pixel). *Default 80px*.
-* **data-height**: set height value of the bar (in pixel). *Default: 30px*.
-* **data-text-color**: set label color of the bar. *Default: "#ffffff"*.
-* **data-background**: set background color of the bar. *Default: "#337ab7"*.
+```html
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="path/to/jquery.simpleskillbar.js"></script>
+<link rel="stylesheet" href="path/to/simpleskillbar.css">
+```
 
+## 📋 Options
 
-## How To Use
+You can configure the skill bars using **JavaScript** or **HTML `data` attributes**.
 
-First, create the simple HTML:
+### Using JavaScript:
+
+| Option       | Type   | Description                                      | Default       |
+|-------------|--------|--------------------------------------------------|---------------|
+| `width`     | String | Set bar width (px or %).                         | `80px`        |
+| `height`    | String | Set bar height (px).                             | `30px`        |
+| `textColor` | String | Set the text color inside the bar.               | `#ffffff`     |
+| `background`| String | Set the background color of the bar.             | `#337ab7`     |
+
+#### Example:
+
+```javascript
+$('#skill1').simpleSkillbar({ width: '95%', background: '#ff3333' });
+```
+
+### Using HTML `data` Attributes:
+
+| Attribute         | Description                          | Default       |
+|------------------|----------------------------------|---------------|
+| `data-width`    | Set bar width (px or %).          | `80px`        |
+| `data-height`   | Set bar height (px).              | `30px`        |
+| `data-text-color` | Set text color inside the bar. | `#ffffff`     |
+| `data-background` | Set background color of the bar. | `#337ab7`     |
+
+#### Example:
+
+```html
+<div id="skill1" data-width="95%" data-background="#ff3333">PHP</div>
+```
+
+## 🎯 How to Use
+
+### 1. Basic Usage
+
+Create a simple HTML structure:
 
 ```html
 <div id="skill1">PHP</div>
 <div id="skill2">HTML</div>
 ```
-Then call the function:
+
+Then initialize the plugin:
 
 ```javascript
 $('#skill1').simpleSkillbar();
 ```
 
-You can also use multiple ids for the function:
+### 2. Multiple Skill Bars
 
 ```javascript
 $('#skill1, #skill2').simpleSkillbar();
 ```
 
-And you're done.
+### 3. Customizing with Options
 
-## Using The Options
-
-To use the options, there are 2 ways.
-
-Either by adding options to the function:
+Using JavaScript:
 
 ```javascript
-$('#skill1').simpleSkillbar({ width: 95 });
+$('#skill1').simpleSkillbar({ width: '95%', background: '#ff3333' });
 ```
 
-Or to the HTML itself with 'data' atributes:
+Using HTML attributes:
 
 ```html
-<div id="skill1" data-width="95">PHP</div>
+<div id="skill1" data-width="95%" data-background="#ff3333">PHP</div>
 ```
 
-Now, let's use more options in there:
+## 💡 Notes
+- Ensure that jQuery is loaded before initializing the plugin.
+- Supports pixel (`px`) and percentage (`%`) widths for flexible design.
+- Animations work smoothly with modern browsers.
 
-```javascript
-$('#skill1').simpleSkillbar({ width: 95, background: "#ff3333" });
-```
+## 📜 License
 
-or with the 'data' attibutes:
+This project is licensed under the **MIT License**.
 
-```html
-<div id="skill1" data-width="95" data-background="#ff3333">PHP</div>
-```
+---
+
+Happy Coding! 🎨💻
